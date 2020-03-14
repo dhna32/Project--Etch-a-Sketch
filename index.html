@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+
+<body>
+    <h1 class="title">ETCH-A-SKETCH</h1>   
+    <div class="navbar">
+        <a type="button" onclick="clearGrid(); createGrid();">GRID</a>
+        <div class="dropdown">
+            <button class="dropbtn">COLORS
+                <i class="down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a type ="button" onclick="colorWhite();">White</a>
+                <a type ="button" onclick="colorBlack();">Black</a>
+                <a type ="button" onclick="colorBlue();">Blue</a>
+                <a type ="button" onclick="colorRainbow();">Rainbow</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="bigContainer"></div>
+        <div id="container" class="my-container">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
