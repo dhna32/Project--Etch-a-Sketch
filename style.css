@@ -11,18 +11,6 @@
     --hoverLink: #f55;
   }
 
-#gridContainer
-{
-  display: grid;
-  border: 5px solid black;
-  width: 720px;
-  height: 720px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  background-color: white;
-  position: relative;
-}
 
 body
 {
@@ -123,4 +111,25 @@ body
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#gridContainer
+{
+  display: flex;
+  border: 5px solid black;
+  width: 720px;
+  height: 720px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background-color: white;
+  position: relative;
+  justify-content: stretch;
+  flex-wrap:wrap;
+}
+
+.grid{
+  border: 0.5px solid black;
+  align-self: stretch;
+
 }
